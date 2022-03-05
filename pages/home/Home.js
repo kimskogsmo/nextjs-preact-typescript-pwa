@@ -16,12 +16,14 @@ function Home({
     data,
     meta
 }) {
-    console.log(data, meta);
+    
 
     return (
         <>
             <h1>ego sum home!</h1>
             <p>descr</p>
+
+            
 
             <section class="categories">
                 {/* {services.map(s => (
