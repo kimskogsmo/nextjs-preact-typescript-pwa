@@ -1,0 +1,27 @@
+{
+    "presets": [
+        "next/babel"
+    ],
+    "plugins": [
+        [
+            "inline-react-svg"
+        ],
+        [
+            "@babel/plugin-transform-runtime"
+        ],
+        [
+            "@babel/plugin-transform-spread"
+        ],
+        [
+            "babel-plugin-module-resolver",
+            {
+                "root": [
+                    "./"
+                ],
+                "alias": {
+                    "@features": "./features/"
+                }
+            }
+        ]
+    ]
+}
