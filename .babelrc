@@ -10,23 +10,19 @@
         }
     },
     "plugins": [
-        [
-            "inline-react-svg"
-        ],
-        [
-            "@babel/plugin-transform-spread"
-        ],
-        [
-            "babel-plugin-module-resolver",
-            {
-                "root": [
-                    "./"
-                ],
-                "alias": {
-                    "@features": "./features/"
-                }
+        ["inline-react-svg"],
+        ["@babel/plugin-transform-runtime"],
+        ["@babel/plugin-transform-spread"],
+        ["@babel/plugin-transform-react-jsx", {
+            "pragma": "h"
+        }],
+        ["babel-plugin-module-resolver", {
+            "root": [
+                "./"
+            ],
+            "alias": {
+                "@features": "./features/"
             }
-        ],
-        ["@babel/plugin-transform-react-jsx", { "pragma": "h" }]
+        }]
     ]
 }

@@ -43,7 +43,7 @@ const nextConfig = {
 module.exports = withPlugins([
     [withPWA, {
         pwa: {
-            dest: 'public',
+            dest: 'build',
             runtimeCaching,
             buildExcludes: [/middleware-manifest.json$/]
         },
