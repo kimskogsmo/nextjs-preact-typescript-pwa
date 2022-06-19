@@ -1,6 +1,0 @@
-// import token from './token';
-// export default token
-
-const token = '2f4a34a999ba42be850f59c96794adb47cd22e2f56ac3e8736643d887f8a94003efdde022633afd2bd193f0f0abfbe95c0730c8e8d007562d171394c19934e5e08bce968c5e4bfd244fa7ef59b83a79fcef98042678d6fac8687d6b43ab43d1fd84a195467d88699d9b813c2db7395732bccced5e2c13d7e1fcd3581817de265';
-
-export default token

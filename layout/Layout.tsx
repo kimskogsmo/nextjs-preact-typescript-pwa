@@ -1,24 +1,25 @@
-import Header from './Header.tsx';
-import Footer from './Footer.tsx';
+import { h, Fragment } from 'preact';
+
+import Header from './Header';
+import Footer from './Footer';
 import Head from 'next/head';
 
 import styles from './Layout.module.scss';
 
 export default function Layout({ title, metaDescription, children, authenticated, user }) {
     return (
-        <>
+        <Fragment>
             <Head>
                 <meta name='description' content={metaDescription} />
                 <title>{title}</title>
             </Head>
 
-            <Header />
+            <Header title={"Accelor"} />
 
             <main className={styles.main}>
                 {children}
             </main>
-            
-            <Footer />
-        </>
+
+        </Fragment>
     )
 }

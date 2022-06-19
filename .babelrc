@@ -1,13 +1,17 @@
 {
     "presets": [
-        "next/babel"
+        "@babel/env",
+        ["@babel/typescript", { "jsxPragma": "h" }]
     ],
+    "resolve": {
+        "alias": {
+            "react": "preact/compat",
+            "react-dom": "preact/compat"
+        }
+    },
     "plugins": [
         [
             "inline-react-svg"
-        ],
-        [
-            "@babel/plugin-transform-runtime"
         ],
         [
             "@babel/plugin-transform-spread"
@@ -22,6 +26,7 @@
                     "@features": "./features/"
                 }
             }
-        ]
+        ],
+        ["@babel/plugin-transform-react-jsx", { "pragma": "h" }]
     ]
 }

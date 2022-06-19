@@ -1,25 +1,21 @@
 /* core */
-import axios from 'axios';
-import { h } from 'preact'
+import { h, Fragment } from 'preact';
 
 /* next */
 import Link from 'next/link'
-
-/* api */
-import api, { fetchQuery, routes } from './../../api'
-import token from './../../config/token';
+import Head from 'next/head'
 
 /* components */
 import Hero from '@features/hero';
 
-function Home({
-    data,
-    meta
-}) {
-    console.log(data, meta);
+function Home() {
 
     return (
-        <>
+        <Fragment>
+            <Head>
+                <title>Accelor // En modern byrå</title>
+            </Head>
+
             <h1>ego sum home!</h1>
             <p>descr</p>
 
@@ -43,34 +39,8 @@ function Home({
                     </article>
                 ))} */}
             </section>
-        </>
+        </Fragment>
     )
 }
-
-export async function getStaticProps(ctx) {
-    const { data, meta } = await fetch('http://localhost:1337/api/articles').then(res => res.status == 200 ? res.json() : null).then(data => data)
-    
-    console.log(data, meta);
-    return {
-        props: {
-            data, meta
-        }
-    }
-}
-
-// export async function getServerSideProps() {
-//     // const services = await fetchQuery(routes.getServices)
-//     // const articles = await fetchQuery(routes.getArticles)
-
-//     // console.log(services, articles);
-
-//     return {
-//         props: {
-//             services,
-//             articles
-//         }
-//     }
-// }
-
 
 export default Home;
