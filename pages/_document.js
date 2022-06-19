@@ -14,7 +14,10 @@ class MyDocument extends Document {
         return (
             <Html lang={this.props.lang} data-theme={'dark'}>
                 <Head>
-                    <meta name="Description" content="NextJS/PWA/TypeScript/Preact."></meta>
+                    <meta name="Description" content={`
+                        En digital byrå från Örebro. Transparens och hållbarhet är några av våra grundvärden.
+                        Vi gör digitala applikationer och mer därtill!
+                    `} />
                     <meta name="theme-color" content="#317EFB"/>
                     <meta name="referrer" content={'strict-origin'} />
                     <meta httpEquiv="Content-Security-Policy" content={getCsp(NextScript.getInlineScriptSource(this.props))} />

@@ -1,13 +1,13 @@
 {
-  "theme_color": "#F0DA7E",
-  "background_color": "#333333",
+  "theme_color": "#fff",
+  "background_color": "#111",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Next.js 100",
-  "app_name": "Next.js 100",
-  "short_name": "Next.js 100",
-  "description": "Build a PWA with Next.js to achieve 100 lighthouse score",
+  "name": "accelor",
+  "app_name": "accelor",
+  "short_name": "accelor",
+  "description": "accelor - en webbyrå från Örebro.",
   "icons": [
     {
       "src": "/android-chrome-512x512.png",
