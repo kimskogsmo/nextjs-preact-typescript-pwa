@@ -2,6 +2,7 @@ import { h, Fragment } from 'preact';
 
 import Header from './Header';
 import Footer from './Footer';
+
 import Head from 'next/head';
 
 import styles from './Layout.module.scss';
@@ -14,12 +15,13 @@ export default function Layout({ title, metaDescription, children, authenticated
                 <title>{title}</title>
             </Head>
 
-            <Header title={"Accelor"} />
+            <Header title={"accelor"} />
 
             <main className={styles.main}>
                 {children}
             </main>
 
+            <Footer companyName={"accelor"}/>
         </Fragment>
     )
 }

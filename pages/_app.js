@@ -1,7 +1,9 @@
 import { h } from 'preact';
 import Layout from './../layout/Layout.tsx'
 
-import './global.styles.css';
+import './reset.css';
+import './vars.css';
+import './main.css';
 
 const MyApp = ({ Component, props }) => {
     return (

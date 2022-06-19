@@ -1,0 +1,27 @@
+:root {
+    --background-primary: #f7f7f7;
+    --background-primary--inverted: #222;
+    --navbar-background-primary: rgba(255,255,255, 0.384);
+
+    --background-2: #e7e7e7;
+    --background-2--inverted: #272727;
+
+    --border-1: rgba(0,0,0,0.07);
+
+    --text-color-clear: #000;
+    --text-color-clear--inverted: #fff;
+}
+
+[data-theme=dark] {
+    --background-primary: #222;
+    --background-primary--inverted: #f7f7f7;
+    --navbar-background-primary: rgba(0,0,0, 0.384);
+
+    --background-2: #e7e7e7;
+    --background-2--inverted: #333;
+
+    --border-1: rgba(255,255,255,0.07);
+
+    --text-color-clear: #fff;
+    --text-color-clear--inverted: #000;
+}

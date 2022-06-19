@@ -14,31 +14,11 @@ function Home() {
         <Fragment>
             <Head>
                 <title>Accelor // En modern byrå</title>
+                <meta name={"description"} content={"Vi skapar digitala applikationer som levererar. Serverless, headless och skalbart."} />
             </Head>
 
-            <h1>ego sum home!</h1>
-            <p>descr</p>
-
-            <section class="categories">
-                {/* {services.map(s => (
-                    <article>
-                        <h3>{s.title}!</h3>
-                    
-                        <Link
-                            href={{
-                                pathname: "services/[slug]",
-                                query: {
-                                    slug: s.slug,
-                                    title: s.title
-                                }
-                            }}
-                            as={`services/${s.slug}`}
-                        >
-                            <strong>View {s.title}!</strong>
-                        </Link>
-                    </article>
-                ))} */}
-            </section>
+            <h1>En modern digital byrå startar Q4 2022.</h1>
+            <p>Vi gör serverless, headless och skalbart. Kika tillbaka snart!</p>
         </Fragment>
     )
 }

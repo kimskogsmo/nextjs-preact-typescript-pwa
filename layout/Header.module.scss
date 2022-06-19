@@ -1,16 +1,24 @@
 .header {
     display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: max-content;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.815rem 1rem;
+    justify-content: center;
+    padding: 0.384rem 1rem;
     background: white;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-1);
+
+    background: var(--navbar-background-primary);
+    backdrop-filter: blur(8px);
+
 }
 
 .logo {
     font-weight: bold;
-    font-size: 1.3rem;
-    font-family: 'Calibri';
+    font-size: 44px;
+    font-family: 'Caveat';
 }
 
 .icons {
