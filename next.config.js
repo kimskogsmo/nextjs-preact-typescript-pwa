@@ -1,9 +1,33 @@
-const withPrefresh = require('@prefresh/next');
-const preact = require('preact');
 const path = require('path');
-const withPreact = require('next-plugin-preact');
+const runtimeCaching = require('next-pwa/cache');
 
-module.exports = withPreact({
+const withPWA = require('next-pwa');
+const withPreact = require('next-plugin-preact');
+const withPlugins = require('next-compose-plugins');
+
+const headers = async () => {
+    return [
+        {
+            source: '/(.*)',
+            headers: [
+                {
+                    key: 'X-Content-Type-Options',
+                    value: 'nosniff'
+                },
+                {
+                    key: 'X-Frame-Options',
+                    value: 'SAMEORIGIN'
+                },
+                {
+                    key: 'X-XSS-Protection',
+                    value: '1; mode=block'
+                }
+            ],
+        },
+    ]
+}
+
+const nextConfig = {
     sassOptions: {
         includePaths: [
             path.join(__dirname, 'styles'),
@@ -14,4 +38,16 @@ module.exports = withPreact({
         defaultLocale: 'en'
     },
     poweredByHeader: false,
-});
+}
+
+module.exports = withPlugins([
+    [withPWA, {
+        pwa: {
+            dest: 'public',
+            runtimeCaching,
+            buildExcludes: [/middleware-manifest.json$/]
+        },
+        headers
+    }],
+    [withPreact, {}]
+], nextConfig);
