@@ -20,8 +20,6 @@ export default function Layout({ title, metaDescription, children, authenticated
             <main className={styles.main}>
                 {children}
             </main>
-
-            <Footer companyName={"accelor"}/>
         </Fragment>
     )
 }
