@@ -4,12 +4,12 @@ import { h, Fragment } from 'preact';
 /* next */
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 
 /* components */
 import Hero from '@features/hero';
 
 function Home() {
-
     return (
         <Fragment>
             <Head>
