@@ -15,10 +15,11 @@ class MyDocument extends Document {
             <Html lang={this.props.lang} data-theme={'dark'}>
                 <Head>
                     <meta name="Description" content={`
-                        En digital byrå från Örebro. Transparens och hållbarhet är några av våra grundvärden.
-                        Vi gör digitala applikationer och mer därtill!
+                        Your meta description goes here, it should probably be around two lines long,
+                        maybe somewhere around this length or just a little longer...
                     `} />
-                    <meta name="theme-color" content="#317EFB"/>
+
+                    <meta name="theme-color" content="#000"/>
                     <meta name="referrer" content={'strict-origin'} />
                     <meta httpEquiv="Content-Security-Policy" content={getCsp(NextScript.getInlineScriptSource(this.props))} />
 
@@ -28,15 +29,11 @@ class MyDocument extends Document {
                     <link href='/favicon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
                     <link href='/favicon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
                     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-                    <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Work+Sans:wght@300;400;700&display=swap"
-                          rel="stylesheet" />
-
                 </Head>
+
                 <body>
-                <Main />
-                <NextScript />
+                    <Main />
+                    <NextScript />
                 </body>
             </Html>
         )

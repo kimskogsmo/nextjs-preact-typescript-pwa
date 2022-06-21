@@ -13,8 +13,8 @@ function Home() {
     return (
         <Fragment>
             <Head>
-                <title>Accelor // En modern byrå</title>
-                <meta name={"description"} content={"Vi skapar digitala applikationer som levererar. Serverless, headless och skalbart."} />
+                <title>NextJS/Preact/TypeScript/PWA boilerplate</title>
+                <meta name={"description"} content={"Yet another preact boilerplate."} />
             </Head>
 
             <h1>En modern digital byrå startar Q4 2022.</h1>
