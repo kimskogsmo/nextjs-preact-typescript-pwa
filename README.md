@@ -3,7 +3,7 @@
 This project is inspired by the PWA/NextJS boilerplate here: https://github.com/rockyliyanlok/nextjs-100
 Added some additional tools of choice, such as TypeScript and Preact.
 
-More disclaimer/inforation coming shortly.
+More disclaimer/information coming shortly.
 
 ## Get started
 Install dependencies:
